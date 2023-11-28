@@ -91,11 +91,11 @@ void Maze::display() {
                     break;
             }
 
-            // Draw black border around each cell
+            // Draws black border around each cell
             cellRect.setOutlineColor(sf::Color::Black);
             cellRect.setOutlineThickness(1.0f);
 
-            // Add a shadow effect
+            // Adds a shadow effect
             sf::ConvexShape shadow(4);
             shadow.setPoint(0, sf::Vector2f(i * cellSize, j * cellSize + cellSize));
             shadow.setPoint(1, sf::Vector2f(i * cellSize + cellSize, j * cellSize + cellSize));
